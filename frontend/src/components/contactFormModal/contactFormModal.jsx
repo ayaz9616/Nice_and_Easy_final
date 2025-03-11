@@ -89,16 +89,34 @@ const ContactFormModal = ({ show, handleClose, onFormSubmitted }) => {
                     required
                   />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label>Mobile Number</label>
                   <input
-                    type="text"
+                    type="number"
                     name="mobileNumber"
                     value={formData.mobileNumber}
                     onChange={handleChange}
                     required
                   />
+                </div> */}
+
+                <div className="form-group">
+                  <label>Mobile Number</label>
+                  <input
+                    type="tel"
+                    name="mobileNumber"
+                    value={formData.mobileNumber}
+                    onChange={handleChange}
+                    onInput={(e) => e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10)}
+                    pattern="^[0-9]{10}$"
+                    maxLength="10"
+                    minLength="10"
+                    required
+                    placeholder="Enter 10-digit mobile number"
+                  />
                 </div>
+
+
                 <div className="form-group">
                   <label>Email Address</label>
                   <input
@@ -106,6 +124,7 @@ const ContactFormModal = ({ show, handleClose, onFormSubmitted }) => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    placeholder="Enter email address"
                   />
                 </div>
                 <button type="button" className="next-button" onClick={handleNextStep}>
@@ -123,6 +142,7 @@ const ContactFormModal = ({ show, handleClose, onFormSubmitted }) => {
                     value={formData.age}
                     onChange={handleChange}
                     required
+                    placeholder="Enter age in years"
                   />
                 </div>
                 <div className="form-group">
@@ -141,23 +161,25 @@ const ContactFormModal = ({ show, handleClose, onFormSubmitted }) => {
                   </select>
                 </div>
                 <div className="form-group">
-                  <label>Height (cm or ft/in)</label>
+                  <label>Height (cm)</label>
                   <input
-                    type="text"
+                    type="number"
                     name="height"
                     value={formData.height}
                     onChange={handleChange}
                     required
+                    placeholder="Enter height in centimeters"
                   />
                 </div>
                 <div className="form-group">
-                  <label>Weight (kg or lbs)</label>
+                  <label>Weight (kg)</label>
                   <input
-                    type="text"
+                    type="number"
                     name="weight"
                     value={formData.weight}
                     onChange={handleChange}
                     required
+                    placeholder="Enter weight in kilograms"
                   />
                 </div>
                 <button type="button" className="prev-button" onClick={handlePrevStep}>

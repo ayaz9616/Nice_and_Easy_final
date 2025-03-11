@@ -37,15 +37,17 @@ const CourseDescription = ({ user }) => {
         },
       }
     );
-
+    // console.log(process.env.Razorpay_Key);
     const options = {
-      key: "rzp_test_WpTfHscPGFJgHQ", // Enter the Key ID generated from the Dashboard
+      key:"rzp_test_WpTfHscPGFJgHQ", // Enter the Key ID generated from the Dashboard
       amount: order.id, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       name: "Nice and Easy", //your business name
       description: "Train with us",
       image: "../../assets/logo.png", // Your logo
       order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+
+      
 
       handler: async function (response) {
         const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
@@ -108,21 +110,21 @@ const CourseDescription = ({ user }) => {
                 </div>
               </div>
 
-              <p>{course.description}</p>
+              <p className="desc-p">{course.description}</p>
 
-              <p>Let's get started with course At ₹{course.price}</p>
+              <p className="desc-p">Let's get started with course At <p className="desc-price">₹{course.price}</p></p>
 
               {user && user.subscription.includes(course._id) ? (
-                <button
+                <div className="btn-container"><button
                   onClick={() => navigate(`/course/study/${course._id}`)}
                   className="common-btn"
                 >
                   Start Training
-                </button>
+                </button></div>
               ) : (
-                <button onClick={checkoutHandler} className="common-btn">
+                <div className="btn-container"><button onClick={checkoutHandler} className="common-btn-desc">
                   Buy Now
-                </button>
+                </button></div>
               )}
             </div>
           )}

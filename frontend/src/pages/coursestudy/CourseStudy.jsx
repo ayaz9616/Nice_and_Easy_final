@@ -42,7 +42,7 @@ const CourseStudy = ({ user }) => {
               </div>
               <div className="studylecbtn">
                 <Link to={`/lectures/${course._id}`}>
-                  <h2>Start Learning</h2>
+                  <h2>Start Training</h2>
                 </Link>
               </div>
             </div>

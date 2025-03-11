@@ -18,20 +18,24 @@ const Header = ({ isAuth }) => {
       </div>
 
       {/* Navigation Links */}
-      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(false)}>
         <Link to={"/"} className="nav-btn">Home</Link>
-        <Link to={"/about"} className="nav-btn">About</Link>
+        <Link to={"/about"} className="nav-btn" >About</Link>
         <Link to={"/courses"} className="nav-btn">Courses</Link>
-        
-      </nav>
-      {/* User Section */}
-      <div className="user-section">
         {isAuth ? (
           <Link to={"/account"} className="login-btn">Account</Link>
         ) : (
           <Link to={"/login"} className="login-btn">Login/Register</Link>
         )}
-      </div>
+      </nav>
+      {/* User Section */}
+      {/* <div className="user-section">
+        {isAuth ? (
+          <Link to={"/account"} className="login-btn">Account</Link>
+        ) : (
+          <Link to={"/login"} className="login-btn">Login/Register</Link>
+        )}
+      </div> */}
     </header>
   );
 };

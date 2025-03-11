@@ -226,7 +226,8 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="modal-overlay">
       <div className="modal-container">
         <button className="modal-close" onClick={onClose}>
-          Close
+        <span style={{ fontSize: "24px", cursor: "pointer" }}>&#10005;</span>
+
         </button>
         {children}
       </div>

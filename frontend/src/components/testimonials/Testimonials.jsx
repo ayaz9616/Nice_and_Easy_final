@@ -9,9 +9,9 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const reviews = [
   { name: "John Doe", review: "An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended!", image: aashtaImg, rating: 5 },
-  { name: "Jane Smith", review: "An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended!", image: ananyaImg, rating: 4 },
-  { name: "Mike Johnson", review: "An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended! ", image: ankushImg, rating: 5 },
-  { name: "Arnav Patel", review: "An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended!  ", image: arnavImg, rating: 4 },
+  { name: "Jane Smith", review: "1An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended!", image: ananyaImg, rating: 4 },
+  { name: "Mike Johnson", review: "2An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended! ", image: ankushImg, rating: 5 },
+  { name: "Arnav Patel", review: "3An exceptional gym trainer! Their guidance, motivation, and personalized workouts make fitness enjoyable and effective. Highly knowledgeable and supportive—perfect for anyone serious about achieving their fitness goals. Highly recommended!  ", image: arnavImg, rating: 4 },
 ];
 
 const HeroTestimonials = () => {

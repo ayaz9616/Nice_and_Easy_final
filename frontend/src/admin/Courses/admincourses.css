@@ -36,7 +36,7 @@
 
 .custom-modal-content h2 {
   font-size: 24px;
-  color: #8a4baf;
+  color: #B34A09;
   margin-bottom: 15px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .custom-modal-content button {
-  background-color: #8a4baf;
+  background-color: #B34A09;
   color: white;
   padding: 10px;
   border: none;
@@ -73,7 +73,7 @@
 }
 
 .custom-modal-content button:hover {
-  background-color: #6a3a8c;
+  background-color: #B34A09;
 }
 
 .dashboard-content1 {

@@ -15,7 +15,7 @@ const ContactSubmissions123 = () => {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      console.log("Abhay", data.data);
+     
       setSubmissions(data.data);
     };
 
@@ -58,12 +58,12 @@ const ContactSubmissions123 = () => {
                 <th className="table-header123">Fitness Level</th>
                 <th className="table-header123">Exercise Frequency</th>
                 <th className="table-header123">Previous Training</th>
-                <th className="table-header123">Workout Preferences</th>
+                {/* <th className="table-header123">Workout Preferences</th> */}
                 <th className="table-header123">Workout Location</th>
                 <th className="table-header123">Workout Duration</th>
                 <th className="table-header123">Workout Days</th>
-                <th className="table-header123">Physical Limitations</th>
-                <th className="table-header123">Conditions</th>
+                {/* <th className="table-header123">Physical Limitations</th> */}
+                {/* <th className="table-header123">Conditions</th> */}
                 <th className="table-header123">Motivation</th>
                 <th className="table-header123">Training Style</th>
                 <th className="table-header123">Workout Alone or Group</th>
@@ -89,12 +89,12 @@ const ContactSubmissions123 = () => {
                   <td className="table-cell123">{submission.fitnessLevel}</td>
                   <td className="table-cell123">{submission.exerciseFrequency}</td>
                   <td className="table-cell123">{submission.previousTraining}</td>
-                  <td className="table-cell123">{submission.workoutPreferences.join(", ")}</td>
+                  {/* <td className="table-cell123">{submission.workoutPreferences.join(", ")}</td> */}
                   <td className="table-cell123">{submission.workoutLocation}</td>
                   <td className="table-cell123">{submission.workoutDuration}</td>
                   <td className="table-cell123">{submission.workoutDays}</td>
-                  <td className="table-cell123">{submission.physicalLimitations}</td>
-                  <td className="table-cell123">{submission.conditions.join(", ")}</td>
+                  {/* <td className="table-cell123">{submission.physicalLimitations}</td> */}
+                  {/* <td className="table-cell123">{submission.conditions.join(", ")}</td> */}
                   <td className="table-cell123">{submission.motivation}</td>
                   <td className="table-cell123">{submission.trainingStyle}</td>
                   <td className="table-cell123">{submission.workoutAloneOrGroup}</td>
