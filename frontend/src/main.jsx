@@ -6,6 +6,7 @@ import { CourseContextProvider } from "./context/CourseContext.jsx";
 
 
 // export const server = "http://localhost:5000";
+//test
 
 export const server = "https://nice-and-easy-final.vercel.app/";
 
