@@ -124,7 +124,7 @@ import ContactSubmissions from "../../components/ContactSubmissions/ContactSubmi
 const AdminDashboard = ({ user }) => {
   const navigate = useNavigate();
 
-  if (user && user.role !== "admin") return navigate("/");
+  if (user && (user.role !== "admin" )) return navigate("/");
 
   const [stats, setStats] = useState([]);
   const [popularCourses, setPopularCourses] = useState([]);

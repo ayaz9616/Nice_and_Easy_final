@@ -15,7 +15,7 @@ const ContactSubmissions123 = () => {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      console.log("Abhay", data.data);
+      
       setSubmissions(data.data);
     };
 
