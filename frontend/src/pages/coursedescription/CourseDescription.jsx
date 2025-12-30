@@ -39,7 +39,7 @@ const CourseDescription = ({ user }) => {
     );
     // console.log(process.env.Razorpay_Key);
     const options = {
-      key:"rzp_test_WpTfHscPGFJgHQ", // Enter the Key ID generated from the Dashboard
+      key:process.env.Razorpay_Key, // Enter the Key ID generated from the Dashboard
       amount: order.id, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       name: "Nice and Easy", //your business name
