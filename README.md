@@ -2,6 +2,9 @@
 
 A friendly, practical app that turns “join a gym” into “start, learn, and keep going.” It welcomes newcomers, supports committed members, and helps coaches scale care. Inside you’ll find a production‑ready React + Vite frontend and an Express/MongoDB backend with payments, media, and admin tooling.
 
+<img width="1892" height="1079" alt="image" src="https://github.com/user-attachments/assets/0029ffce-1b2b-4366-a6ff-636876348387" />
+
+
 ---
 
 ## Why This Exists (The Story) 📖
